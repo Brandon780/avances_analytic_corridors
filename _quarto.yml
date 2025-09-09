@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: docs   # 👈 todo se genera en /docs para GitHub Pages
+
+website:
+  title: "Green Maritime Corridors - Canal de Panamá"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Inicio
+    right:
+      - icon: github
+        href: "https://github.com/Brandon780/avances_analytic_corridors"
+
+format:
+  html:
+    toc: true
+    toc-title: "Contenidos"
+    toc-location: right
+    toc-expand: true
+    number-sections: true
+    lof: true
+    lot: true
+    css: styles.css
+    math-method: mathjax
+    wrap: none
+    code-fold: true
+    code-tools: true
+    code-layout: full
+    theme: flatly    # 👈 opcional, mejora visual
+
+lang: es
+
+title: "Green Maritime Corridors - Canal de Panamá"
+author: "Brandon Martínez"
+date-format: long
+abstract-title: "Resumen"
+abstract: |
+  Este documento presenta un análisis de trayectorias marítimas a través del Canal de Panamá,
+  incluyendo limpieza de datos, análisis exploratorio, análisis espacial H3 y modelado secuencial
+  con LSTM para la predicción de emisiones de CO₂.
+description: "Tráfico marítimo en el Canal de Panamá, análisis técnico operacional-temporal con separación de prueba externa."
+tools: "Python, pandas, matplotlib, seaborn, geopandas"
+link-citations: true
+document-css: false
